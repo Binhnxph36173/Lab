@@ -1,0 +1,13 @@
+thead th{
+    text-align: center;
+    vertical-align: middle !important;
+    background-color: lightgoldenrodyellow;
+}
+.botolo{
+    background-color: white;
+    border: 1px solid gray;
+    border-radius: 3px;
+    width: 90px;
+    height: 35px;
+    font-size: none;
+}
