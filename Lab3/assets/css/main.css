@@ -1,0 +1,95 @@
+header {
+    position: relative;
+}
+
+.shopping-mail {
+    position: absolute;
+    bottom: 20px;
+    font-variant: small-caps;
+}
+
+.shopping-mail>h1 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 50px;
+    color: white;
+    letter-spacing: 0.3px;
+    text-shadow: 0 0 2px black;
+    padding-bottom: 0px;
+    border-bottom: 1px dotted gray;
+    margin: 0px;
+}
+
+.shopping-mail>h5 {
+    margin-top: 5px;
+    letter-spacing: 0.5px;
+}
+
+.pull-right {
+    position: relative;
+    right: -600px;
+}
+
+.poly-cart {
+    margin-top: 5px;
+}
+
+.poly-cart ul {
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+    font-variant: small-caps;
+}
+
+.poly-cart .card-header strong {
+    font-variant: small-caps;
+    font-size: larger;
+    text-shadow: 0 0 2px darkgray;
+}
+
+.poly-prod {
+    text-align: center;
+    padding: 5px;
+}
+
+.poly-prod .card-body img {
+    height: 150px;
+    max-width: 95%;
+}
+
+footer.row div.card {
+    width: 100%;
+}
+
+.carousel-inner img {
+    margin: 0px auto;
+    height: 300px;
+    max-width: 95%;
+}
+
+.carousel-control-prev {
+    background-color: rgb(181, 181, 181);
+}
+
+.carousel-control-next {
+    background-color: rgb(181, 181, 181);
+}
+
+.img-edit{
+    border-radius: 5px;
+    border: 1px solid darkgray;
+    height: 50px;
+    max-width: 95%;
+}
+.list-group-item{
+    color: black;
+    cursor: pointer;
+}
+.link-icon{
+    border-radius: 25px;
+    border: 1px solid darkgray;
+    padding: 2px 12px 2px 12px;
+    margin: 5px;
+}
+.ul-link{
+    margin-top: 20px;
+}
