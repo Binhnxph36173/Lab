@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Angular -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body ng-app="myapp">
+
+    <div class="container">
+        <div ng-controller="myctrl">
+            <script>
+                var app = angular.module("myapp", []);
+                app.controller("myctrl", function ($scope) {
+                    $scope.student = [
+                        {
+                            fullname: "Nguyễn Xuân Bình",
+                            birthday: "24-01-2004",
+                            gender: "Nam",
+                            photo: "hinh-nen-dep-22.jpg",
+                            mark: "11.0"
+                        },
+                        {
+                            fullname: "Nguyễn Văn A",
+                            birthday: "02-01-2000",
+                            gender: "Nam",
+                            photo: "Hinh-nen-bau-troi.jpg",
+                            mark: "49.53"
+                        },
+                        {
+                            fullname: "Dương Thị B",
+                            birthday: "12-02-1999",
+                            gender: "Nữ",
+                            photo: "hinh-nen-may-tinh-hinh-nen-4k-25.jpg",
+                            mark: "69.96"
+                        }
+                    ];
+                });
+            </script>
+            <table class="table bordered">
+                <thead>
+                    <tr>
+                        <th>HÌNH</th>
+                        <th>HỌ VÀ TÊN</th>
+                        <th>NGÀY SINH</th>
+                        <th>GIỚI TÍNH</th>
+                        <th>ĐIỂM</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td scope="row">
+                            <img src="{{student[0].photo}}" alt="Lỗi ảnh!" width="150px">
+                        </td>
+                        <td>{{student[0].fullname}}</td>
+                        <td>{{student[0].birthday}}</td>
+                        <td>{{student[0].gender}}</td>
+                        <td>{{student[0].mark}}</td>
+                    </tr>
+                    <tr>
+                        <td scope="row">
+                            <img src="{{student[1].photo}}" alt="Lỗi ảnh!" width="150px">
+                        </td>
+                        <td>{{student[1].fullname}}</td>
+                        <td>{{student[1].birthday}}</td>
+                        <td>{{student[1].gender}}</td>
+                        <td>{{student[1].mark}}</td>
+                    </tr>
+                    <tr>
+                        <td scope="row">
+                            <img src="{{student[2].photo}}" alt="Lỗi ảnh!" width="150px">
+                        </td>
+                        <td>{{student[2].fullname}}</td>
+                        <td>{{student[2].birthday}}</td>
+                        <td>{{student[2].gender}}</td>
+                        <td>{{student[2].mark}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
